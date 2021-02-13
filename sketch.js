@@ -29,7 +29,7 @@ function setup() {
     block1 = createSprite(800,300,20,600);
     block2 = createSprite(400,0,800,20);
     block3 = createSprite(0,300,20,600);
-    block4 = createSprite(400,575,800,20);
+    block4 = createSprite(400,600,810,20);
 
 
 
@@ -49,17 +49,18 @@ function draw() {
 
     if(box.isTouching(surface1)){
         box.shapeColor = "green";
+        music.play();
 
     }
 
     if(box.isTouching(surface3)){
         box.shapeColor = "orange";
-
+        music.play();
     }
 
     if(box.isTouching(surface4)){
         box.shapeColor = "blue";
-
+        music.play();
     }
 
     BounceOff(box, surface2);
